@@ -1,0 +1,920 @@
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.header {
+
+    height: 150px;
+
+    background-color: #2A3B57;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 0;
+
+    padding: 20px 200px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+
+
+
+
+.logo {
+
+    width: 200px;
+
+    height: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+
+
+}
+
+
+
+.logo img {
+
+    width: 180px;
+
+    height: 180px;
+
+}
+
+
+
+.solutions {
+
+    color: yellow;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+
+
+/* 1. ESTADO NORMAL y CONTENEDOR (UL) */
+.header-links {
+    list-style: none;
+    /* Elimina 'color: #f9faf8;' de aquí, ya que no se hereda bien */
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    /* 'text-decoration: none;' aquí no hace nada, aplícalo al 'a' */
+}
+
+/* 2. ESTADO BASE y VISITADO (A:LINK y A:VISITED) */
+/* ¡ESTA REGLA ES LA QUE FALTA! Define el color blanco para todos los enlaces */
+.header-links a,
+.header-links a:visited {
+    color: #f9faf8; /* <-- Esto asegura que sean blancos/claros */
+    text-decoration: none; /* <-- Aplica esto aquí, al enlace */
+}
+
+/* 3. ESTADO HOVER (A:HOVER) */
+.header-links a:hover {
+    color: red; /* <-- El hover debe ir al final para tener prioridad */
+}
+
+
+
+.Hero {
+
+    background-image: linear-gradient(rgba(42, 59, 87, 0.25),
+
+            rgba(42, 59, 87, 0.10)),
+
+        url('img3.png');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 700px;
+
+    padding-top: 0;
+
+    margin-top: 0;
+
+}
+
+
+
+
+
+.heroText {
+
+    padding-top: 280px;
+
+    padding-left: 290px;
+
+    width: 40%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+.heroText p,
+
+.heroText h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+    color: #f9faf8;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+.heroText h2 {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+
+.sabermas {
+
+    background-color: silver;
+
+    border-color: white;
+
+    width: 150px;
+
+    height: 50px;
+
+    color: black;
+
+}
+.sabermas:hover {
+    background-color: #A9A9A9; /* Un tono de gris oscuro para dar profundidad */
+    color: black;
+    /* Efecto opcional: un poco de sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+
+.contactoBtn {
+    margin-left: 45%;
+    margin-top: 150px;
+
+    background-color: #3882f6;
+    border-color: white;
+    width: 150px;
+    height: 50px;
+    color: white;
+
+}
+
+.contactoBtn:hover{
+     background-color: #1D61C8; /* Un tono de gris oscuro para dar profundidad */
+    color: black;
+    /* Efecto opcional: un poco de sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+
+.productosYservicios {
+
+    background-color: lightgrey;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.PrdTxt {
+
+    padding-top: 0;
+
+    padding-left: 0;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.productosYservicios h2 {
+
+    /* Ya centrado por el padre, pero mantenemos los estilos de texto */
+
+    color: black;
+
+    font-weight: bold;
+
+    font-size: 30px;
+
+}
+
+
+
+.productosYservicios p {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    line-height: 1.6;
+
+    padding-left: 10px;
+    font-size: 25px;
+
+}
+
+
+
+.servicios-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.servicios-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin: 40px auto;
+
+    max-width: 1200px;
+
+    padding: 0 20px;
+
+
+
+}
+
+
+
+.servicio-item {
+
+    background-color: #FFFFFF;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.servicio-item:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+.servicio-item img {
+
+
+
+    width: max;
+
+    height: 250px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.servicio-item h3 {
+
+    color: #2A3B57;
+
+    margin-top: 0;
+
+    font-size: 18px;
+
+}
+
+
+
+.servicio-item p {
+
+    color: #555555;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .servicios-grid {
+
+        /* En pantallas pequeñas, solo habrá 1 columna para que se apilen */
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+.container-meta {
+            background-color: #e0e0e0; /* Color de fondo base */
+            background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); /* Textura de hexágonos */
+            padding: 60px 20px;
+            text-align: center;
+            color: #444;
+            border-top: 8px solid #5d4037; /* Barra superior marrón */
+        }
+
+        .header-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #333;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            line-height: 1.5;
+        }
+
+        .header-section strong {
+            color: #555;
+            font-weight: 700;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-item i {
+            font-size: 3rem;
+            color: #ff6d00; /* Color naranja de la imagen */
+            margin-bottom: 15px;
+        }
+
+        .feature-item span {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features-grid { gap: 20px; }
+            .header-section h2 { font-size: 1.8rem; }
+        }
+
+        .video-section {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Video de fondo */
+    .video-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    /* Capa oscura para legibilidad */
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Oscurece el video un 50% */
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-content {
+        z-index: 3;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .video-content h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+    }
+
+    .video-content p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+        font-weight: 300;
+    }
+
+    /* Botón estilo tecnológico */
+    .btn-video {
+        display: inline-block;
+        padding: 12px 35px;
+        border: 2px solid #ff6d00;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .btn-video:hover {
+        background-color: #ff6d00;
+        color: white;
+    }
+
+    @media (max-width: 768px) {
+        .video-content h3 { font-size: 1.8rem; }
+        .video-content p { font-size: 1rem; }
+    }
+
+    .contacto-section {
+        background-color: #ffffff;
+        padding: 60px 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contacto-section h2 {
+        font-size: 2.5rem;
+        color: #555;
+        margin-bottom: 50px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .contacto-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contacto-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
+
+    /* Círculos naranjas para los iconos */
+    .icon-circle {
+        background-color: #ff6d00;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .contacto-texto p {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.4;
+    }
+
+    .contacto-texto strong {
+        color: #333;
+    }
+
+    /* Estilo para el logo de certificación */
+    .logo-duns {
+        max-width: 180px;
+        height: auto;
+        filter: grayscale(0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contacto-grid {
+            flex-direction: column;
+            gap: 40px;
+        }
+        .contacto-item {
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+
+.contacto-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  .contacto-form label { margin-top: 10px; font-weight: bold; }
+  .contacto-form input, .contacto-form textarea {
+    padding: 100px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contacto-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .contacto-form button:hover { background-color: #0056b3; }
+
+  .contacto-container {
+    max-width: 600px;
+    margin: 50px auto; /* Centra el formulario y da espacio arriba/abajo */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+.contacto-container h2 {
+    color: #0056b3; /* Un azul industrial */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacto-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* --- Formulario --- */
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada grupo de input */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* --- Inputs y Textarea --- */
+.form-group input, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al hacer clic en un campo */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Evitar que el usuario deforme el diseño del textarea */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* --- Botón Enviar --- */
+.btn-enviar {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #004494;
+    transform: translateY(-2px); /* Efecto de levante */
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+/* --- Responsivo (Para celulares) --- */
+@media (max-width: 480px) {
+    .contacto-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+footer {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* --- Quienes somos--- */
+
+#mission {
+    /* Reemplaza 'mision-fondo.jpg' con el nombre de tu archivo */
+    background-image: url('mision-fondo.jpg'); 
+    background-size: cover;         /* La imagen cubre todo el ancho y alto */
+    background-position: center;    /* Centra la foto */
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 450px;             /* Ajusta la altura de la sección */
+    display: flex;
+}
+
+.mission-overlay {
+    background-color: rgba(27, 38, 59, 0.8); /* Capa azul oscuro con 80% de opacidad */
+    width: 100%;
+    display: flex;
+    align-items: center;           /* Centra el texto verticalmente */
+    justify-content: center;       /* Centra el texto horizontalmente */
+    padding: 40px 10%;
+}
+
+#mission-header {
+    text-align: center;
+    max-width: 900px;
+    color: white;
+}
+
+#mission-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffca28; /* El amarillo de tu logo Control Dev */
+}
+
+#mission-header p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Contenedor principal de Valores */
+#valores {
+    position: relative; /* Necesario para que el video se alinee aquí */
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden; /* Corta el video excedente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste del Video */
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; /* Al fondo */
+    transform: translate(-50%, -50%); /* Centra el video perfectamente */
+    object-fit: cover; /* Evita que el video se estire */
+}
+
+/* Capa de contraste para leer el texto */
+.valores-overlay {
+    position: relative;
+    z-index: 2; /* Por encima del video */
+    background: rgba(27, 38, 59, 0.7); /* Oscurece el video para legibilidad */
+    width: 100%;
+    padding: 80px 0;
+}
+
+#valores-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+/* Reutilizamos el grid de tarjetas blancas que vimos antes */
+#valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#valores-grid li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 5px solid #3882f6;
+}
+/* Contenedor General */
+.equipo {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#equipo-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column; /* Una debajo de otra */
+    gap: 30px;
+    max-width: 1000px; /* Controla qué tan ancho se ve en pantalla */
+    margin: 0 auto;
+}
+
+/* La Tarjeta Individual */
+.tarjeta-miembro {
+    display: flex; /* Alinea imagen y texto en fila */
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-miembro:hover {
+    transform: translateX(10px); /* Efecto sutil hacia la derecha */
+}
+
+/* Contenedor de la Imagen */
+.foto-contenedor {
+    flex: 0 0 250px; /* Ancho fijo para la imagen */
+    height: 250px;
+}
+
+.foto-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se deforme */
+}
+
+/* Contenedor del Texto */
+.info-contenedor {
+    padding: 30px;
+    text-align: left; /* Texto a la derecha de la imagen, alineado a la izquierda */
+}
+
+.info-contenedor h2 {
+    margin: 0;
+    color: #0056b3;
+    font-size: 1.5rem;
+}
+
+.info-contenedor span {
+    display: block;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.info-contenedor p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Adaptación para Celulares */
+@media (max-width: 600px) {
+    .tarjeta-miembro {
+        flex-direction: column; /* Imagen arriba, texto abajo en móviles */
+    }
+    .foto-contenedor {
+        width: 100%;
+        flex: none;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control Dev/Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="CntrlLogo.png">
+    
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo"><img src="CntrlLogo.png" alt="logo"></div>
+        <div class="solutions">Industrial & IT Solutions</div>
+        <nav>
+            <ul class="header-links">
+                <li><a href="index.html"> Inicio </a> </li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+   <main class="contacto-container">
+        <h2>Contacto</h2>
+        <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
+        
+        <form id="contactForm" method="POST" class="main-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="E.j Angel Garcia" required>
+            </div>
+
+            <div  class="form-group">
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu negocio">
+            </div>
+
+            <div  class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. +52 55 1234 5678">
+            </div>
+
+            <div  class="form-group">
+                <label for="mensaje">Detalles adicionales:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar información</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy;2025 Control Dev. Todos los derechos reservados</p>
+        </div>
+    </footer>
+<script src="contacto.js"></script>
+</body>
+
+</html>
