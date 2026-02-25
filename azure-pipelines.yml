@@ -1,9 +1,0 @@
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- script: echo Hola mundo
-  displayName: "Run a one-line script"
